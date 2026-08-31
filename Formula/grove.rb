@@ -28,14 +28,6 @@ class Grove < Formula
     bin.install "grove"
   end
 
-  def caveats
-    <<~EOS
-      grove cd and the app's enter-to-go need the shell wrapper.
-      Add one line to your shell rc:
-        eval "$(grove shell-init zsh)"   # or bash / fish
-    EOS
-  end
-
   test do
     assert_match version.to_s, shell_output("#{bin}/grove --version")
   end
