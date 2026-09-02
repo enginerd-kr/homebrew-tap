@@ -1,26 +1,26 @@
 class Grove < Formula
   desc "Git worktree manager with an interactive terminal UI"
   homepage "https://github.com/enginerd-kr/grove"
-  version "0.4.4"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/enginerd-kr/grove/releases/download/v#{version}/grove-darwin-arm64.tar.gz"
-      sha256 "f23082a74b1b1d51b266450a992c60da0401e06d07d0338cb3b65c634fc37600"
+      sha256 "82cba71f7b340b80bc0db285247d3da258c7b99893849fef5c0eba6f160c459a"
     else
       url "https://github.com/enginerd-kr/grove/releases/download/v#{version}/grove-darwin-x64.tar.gz"
-      sha256 "70bd739c5ca9c3492d0ca0bdcb90cd888b183ef90323af9a7aab6bf81b0361c4"
+      sha256 "ecaf7689b17b35bcb2c8768939f8d1ac632adaeb724fa0956cf8b566320ba4d2"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/enginerd-kr/grove/releases/download/v#{version}/grove-linux-arm64.tar.gz"
-      sha256 "54e188217fd8b6347090f409cebfa960819954ba4ca64cc555b7883a8d4c0835"
+      sha256 "97690a9559a863bec7b387903d5035cfbf8ea1e6fcce5bdbd09bf848d9c037c0"
     else
       url "https://github.com/enginerd-kr/grove/releases/download/v#{version}/grove-linux-x64.tar.gz"
-      sha256 "6b0f5e67220dbaec0626b84d650597ce6210ac5fdf4ddca61d5f6bf5cfc8cec5"
+      sha256 "53169202484efd15c8aa8d5f10d1a1fd4271e911c55ad717c30c2ab00812467e"
     end
   end
 
